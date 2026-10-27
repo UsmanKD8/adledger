@@ -1,3 +1,43 @@
+# Branch: Usman
+
+**Muhammad Usman Farooqi (25SP-011-AI)** · Frontend Lead – HTML, CSS, JavaScript
+
+## Tasks
+
+**Already done**
+- [x] Folder structure, theme, sidebar layout (`frontend/assets/css`, `layout.js`)
+- [x] Login page and session handling
+- [x] Generic CRUD component (table, search, add/edit form, delete)
+- [x] All 10 module pages, dashboard and attribution report
+- [x] Frontend deployed on Vercel and connected to the API
+
+**To do**
+- [ ] Hide menu items by role (e.g. *Sales* users should not see *Agency Users*) – `layout.js`
+- [ ] Better form validation messages (required fields, positive amounts, end date after start date) – `ui.js`
+- [ ] Lead detail view: show a lead's follow-ups and sale on one screen
+- [ ] Add a simple revenue-vs-spend chart on the dashboard
+- [ ] Test every page on mobile and laptop widths and fix layout issues
+- [ ] Take screenshots of every page for the final report / user guide
+- [ ] Test the live site end-to-end with the seeded logins
+
+### How to work on this branch
+
+```bash
+git clone https://github.com/UsmanKD8/adledger.git
+cd adledger
+git checkout Usman
+# ...make changes...
+git add .
+git commit -m "Describe what you did"
+git push
+```
+
+When a task is finished, open a Pull Request from `Usman` into `main` on GitHub
+so the others can review it. Pull `main` into your branch regularly
+(`git pull origin main`) to stay up to date.
+
+---
+
 # AdLedger – Campaign-to-Revenue Intelligence Platform
 
 CSC204 Database Systems project. MySQL + Python Flask + HTML/CSS/JS.
