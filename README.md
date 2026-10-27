@@ -1,3 +1,44 @@
+# Branch: Ashar
+
+**Ashar Arshad (25SP-015-AI)** · Backend Lead – Python Flask REST API
+
+## Tasks
+
+**Already done**
+- [x] Flask app, MySQL connection, config from environment variables
+- [x] Login / logout with hashed passwords and sessions
+- [x] CRUD endpoints for all 10 resources (`routes/crud.py`)
+- [x] Report endpoints backed by SQL views (`routes/reports.py`)
+- [x] Payment recorded inside an explicit transaction
+- [x] Backend deployed on Vercel (`adledger-api.vercel.app`)
+
+**To do**
+- [ ] Remove the one-time `routes/setup.py` route once the online database is loaded
+- [ ] Server-side validation (email format, dates, positive amounts) with clear JSON errors
+- [ ] Add filters/search to list endpoints (e.g. `/api/leads?status=New&campaign_id=2`)
+- [ ] Endpoint for the lead status history (`lead_status_log` table)
+- [ ] Check role rules on every route (Admin / Manager / Sales) and test them
+- [ ] Write `docs/api.md` with every endpoint, request and response example
+- [ ] Make a Postman / Thunder Client collection and test all endpoints
+
+### How to work on this branch
+
+```bash
+git clone https://github.com/UsmanKD8/adledger.git
+cd adledger
+git checkout Ashar
+# ...make changes...
+git add .
+git commit -m "Describe what you did"
+git push
+```
+
+When a task is finished, open a Pull Request from `Ashar` into `main` on GitHub
+so the others can review it. Pull `main` into your branch regularly
+(`git pull origin main`) to stay up to date.
+
+---
+
 # AdLedger – Campaign-to-Revenue Intelligence Platform
 
 CSC204 Database Systems project. MySQL + Python Flask + HTML/CSS/JS.
