@@ -1,0 +1,8 @@
+backend/venv/
+backend/.env
+database/.remote.env
+__pycache__/
+*.pyc
+.vercel/
+.claude/
+*.docx

@@ -1,0 +1,32 @@
+# Render Blueprint: Flask API (free web service).
+# Database credentials are entered in the Render dashboard (sync: false).
+services:
+  - type: web
+    name: adledger-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
+      - key: DB_SSL
+        value: "true"
+      - key: DB_NAME
+        value: adledger_db
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
