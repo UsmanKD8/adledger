@@ -17,7 +17,7 @@ from werkzeug.exceptions import HTTPException
 
 from config import Config
 from db import close_db
-from routes import auth, crud, reports
+from routes import auth, crud, reports, setup
 
 FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
 
@@ -56,6 +56,7 @@ def create_app():
 
     app.register_blueprint(auth.bp)
     app.register_blueprint(reports.bp)
+    app.register_blueprint(setup.bp)
     app.register_blueprint(crud.bp)
     app.teardown_appcontext(close_db)
 
