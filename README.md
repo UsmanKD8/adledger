@@ -1,3 +1,43 @@
+# Branch: Rayyan
+
+**Rayyan Asif (25SP-004-AI)** · Database Lead – MySQL
+
+## Tasks
+
+**Already done**
+- [x] `01_schema.sql` – 11 tables with PK, FK, NOT NULL, UNIQUE, CHECK, DEFAULT, indexes
+- [x] `02_triggers.sql` – invoice auto-status, overpayment block, lead status log, sale → Converted
+- [x] `03_views.sql` – campaign performance (CPL, CPC, conversion rate, ROAS), dashboard, invoices
+- [x] `04_seed.sql` – sample data
+- [x] Free MySQL database created on Aiven
+
+**To do**
+- [ ] ER diagram of all entities with cardinality (draw.io / MySQL Workbench) → `database/erd.png`
+- [ ] Normalization write-up: show 1NF → 2NF → 3NF for the report
+- [ ] `05_queries.sql` – complex queries for the report: multi-table JOINs, subqueries, GROUP BY / HAVING
+- [ ] `06_transactions.sql` – START TRANSACTION … COMMIT / ROLLBACK demo (payment + invoice)
+- [ ] Run `EXPLAIN` on the report queries and justify the indexes
+- [ ] Add more realistic seed data (more campaigns, leads and payments)
+- [ ] Verify every trigger and view on the online (Aiven) database
+
+### How to work on this branch
+
+```bash
+git clone https://github.com/UsmanKD8/adledger.git
+cd adledger
+git checkout Rayyan
+# ...make changes...
+git add .
+git commit -m "Describe what you did"
+git push
+```
+
+When a task is finished, open a Pull Request from `Rayyan` into `main` on GitHub
+so the others can review it. Pull `main` into your branch regularly
+(`git pull origin main`) to stay up to date.
+
+---
+
 # AdLedger – Campaign-to-Revenue Intelligence Platform
 
 CSC204 Database Systems project. MySQL + Python Flask + HTML/CSS/JS.
